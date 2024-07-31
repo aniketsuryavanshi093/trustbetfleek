@@ -1,0 +1,114 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"); */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0f1716;
+}
+
+:root {
+  --primarytext-color: #57ac47;
+  --secondary-color: #88c13c;
+}
+
+.Toastify__toast-body > div:last-child {
+  word-break: break-word;
+  flex: 1;
+  color: black;
+}
+@font-face {
+  font-family: "Geometria";
+  src: url("/fonts/geometria_bold.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: url("/fonts/geometria_light.otf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+.buylabel {
+  label {
+    font-size: 14px !important;
+    font-weight: 100;
+  }
+}
+.dropdownmnu {
+  position: absolute;
+  margin-top: 14px;
+  right: 2%;
+  background: #259947;
+}
+* {
+  font-family: "Geometria", sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+main {
+  overflow: hidden;
+}
+strong {
+  color: #88c13c;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+.connect-wallet-btn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 20px;
+  font-size: 18px;
+  background: linear-gradient(180deg, #219653 0%, #299c35 100%);
+  padding: 20px 40px;
+  border: none;
+  border-radius: 20px;
+}
+
+.roadmap-container {
+  max-width: 100%;
+}
+
+@media (max-width: 820px) {
+  section {
+    /* padding: 0 20px; */
+  }
+
+  .roadmap-container {
+    padding-left: 20px;
+    overflow-x: hidden;
+  }
+}
+
+.wallet-adapter-modal-button-close {
+  z-index: 1000;
+}
+
+@media (max-width: 500px) {
+  .gt_switcher_wrapper {
+    max-width: 1px;
+  }
+}
+
+@media (max-width: 500px) {
+  .gt_switcher_wrapper {
+    max-width: 1px;
+  }
+}

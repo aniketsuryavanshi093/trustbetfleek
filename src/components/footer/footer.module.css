@@ -1,0 +1,44 @@
+.button {
+  position: fixed;
+  bottom: 50px;
+  margin-top: 200px;
+  right: 5%;
+  z-index: 10;
+  display: flex;
+  gap: 4px;
+}
+
+.visible {
+  transition: 1s;
+  z-index: 100;
+  pointer-events: all;
+  opacity: 1;
+  display: none;
+}
+
+.non-visible {
+  transition: 1s;
+  pointer-events: none;
+  opacity: 0;
+}
+
+@media (max-width: 500px) {
+  .visible {
+    display: block;
+  }
+}
+
+@media (max-width: 820px) {
+  .button {
+    right: none;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: end;
+    font-size: 15px;
+    padding: 18px 5px;
+    width: 240px;
+    bottom: 20px;
+    min-width: 92%;
+  }
+}
